@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interest Calculator</title>
+</head>
+<body>
+	<script type="text/javascript" language="javascript" src="script.js"></script>
+	<div class="headings">
+		<h1>Loan Installment Calculator</h1>
+	</div>
+	<table id="inputdata">
+		<tr>
+			<td>Loan Amount (INR)</td>
+			<td>
+				<input type="number" id="loan_amount" placeholder="10000">
+			</td>
+		</tr>
+		<tr>
+			<td>Loan Term</td>
+			<td>
+				<input type="number" id="term_yrs" placeholder="years">
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp</td>
+			<td>
+				<input type="number" id="term_mnths" placeholder="months">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Rate of Interest (%)
+			</td>
+			<td>
+				<input type="number" id="interest_rate" placeholder="6">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="number" id="otp" value="000">
+			</td>
+		</tr>
+
+	</table>
+	<input type="button" name="submit" onclick="calculate()" value="Submit">
+	
+
+</body>
+</html>

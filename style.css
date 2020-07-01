@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    color: rebeccapurple;
+    text-decoration-color: rosybrown;
+}
+table{
+    text-align: start;
+    margin-left: 20%;
+}
+#sub{
+    margin-left: 25%;
+}

@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Interest Calculator</title>
+    <title>Interest Calculator</title>
+    <!-- Always keep css in head -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" language="javascript" src="script.js"></script>
-	<div class="headings">
-		<h1>Loan Installment Calculator</h1>
-	</div>
-	<table id="inputdata">
-		<tr>
-			<td>Loan Amount (INR)</td>
-			<td>
-				<input type="number" id="loan_amount" placeholder="10000">
-			</td>
-		</tr>
-		<tr>
-			<td>Loan Term</td>
-			<td>
-				<input type="number" id="term_yrs" placeholder="years">
-			</td>
-		</tr>
-		<tr>
-			<td>&nbsp</td>
-			<td>
-				<input type="number" id="term_mnths" placeholder="months">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Rate of Interest (%)
-			</td>
-			<td>
-				<input type="number" id="interest_rate" placeholder="6">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<input type="number" id="otp" value="000">
-			</td>
-		</tr>
+    <div class="align-center">
+    <!-- Form Daaloge toh submit enter key se hojega  , return false agr nhi krega ya on submit hta dega toh page refresh hojega submit hone k baad jo ki hua toh value show ni hogi ..-->
+    <form onsubmit="return false">
+        <!-- Tera Code ! -->
+        <div class="headings">
+            <h1>Loan Installment Calculator</h1>
+        </div>
+        <table id="inputdata">
+            <tr>
+                <td>Loan Amount (INR)</td>
+                <td>
+                    <input type="number" id="loan_amount" placeholder="10000">
+                </td>
+            </tr>
+            <tr>
+                <td>Loan Term</td>
+                <td>
+                    <input type="number" id="term_yrs" placeholder="years">
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>
+                    <input type="number" id="term_mnths" placeholder="months">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rate of Interest (%)
+                </td>
+                <td>
+                    <input type="number" id="interest_rate" placeholder="6">
+                </td>
+            </tr>
+        </table>
+        <!-- type submit rkh enter dbate hi submit hojega form -->
+        <input type="submit" name="submit" onclick="calculate()" value="Submit" id="sub">
+    </form>
+        <!-- Input Box m Result achha ni lgta toh alg se likho yhaan p js result likhega-->
+        <h3 id="result"></h3>
 
-	</table>
-	<input type="button" name="submit" onclick="calculate()" value="Submit" id="sub">
-	
-
+        <!-- Always Keep Js File at End of Body -->
+        <script type="text/javascript" language="javascript" src="script.js"></script>
+    </div>
 </body>
 </html>
